@@ -66,10 +66,58 @@ services:
 ## For custom volumes replace with volume driver configuration.
 volumes:
   data1-1:
+    driver: local-persist
+    driver_opts:
+      o: bind
+      type: none
+      device: /mnt/disk1
+      mountpoint: /mnt/disk1
   data1-2:
+    driver: local-persist
+    driver_opts:
+      o: bind
+      type: none
+      device: /mnt/disk2
+      mountpoint: /mnt/disk2
   data2-1:
+    driver: local-persist
+    driver_opts:
+      o: bind
+      type: none
+      device: /mnt/disk3
+      mountpoint: /mnt/disk3
   data2-2:
+    driver: local-persist
+    driver_opts:
+      o: bind
+      type: none
+      device: /mnt/disk4
+      mountpoint: /mnt/disk4
   data3-1:
+    driver: local-persist
+    driver_opts:
+      o: bind
+      type: none
+      device: /mnt/disk5
+      mountpoint: /mnt/disk5
   data3-2:
+    driver: local-persist
+    driver_opts:
+      o: bind
+      type: none
+      device: /mnt/disk6
+      mountpoint: /mnt/disk6
   data4-1:
+    driver: local-persist
+    driver_opts:
+      o: bind
+      type: none
+      device: /mnt/disk7
+      mountpoint: /mnt/disk7
   data4-2:
+    driver: local-persist
+    driver_opts:
+      o: bind
+      type: none
+      device: /mnt/disk8
+      mountpoint: /mnt/disk8
