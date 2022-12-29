@@ -8,6 +8,21 @@ With Compose, you use a Compose file to configure MinIO services. Then, using a 
 
 * Familiarity with [Docker Compose](https://docs.docker.com/compose/overview/).
 * Docker installed on your machine. Download the relevant installer from [here](https://www.docker.com/community-edition#/download).
+* Create directories in your Linux machine
+```
+$ sudo mkdir /mnt/disk1 ... /mnt/disk8
+```
+* Go to the data folder you wanted to save files
+```
+$ sudo fallocate -l 50G vhd1.img
+$ sudo mkfs.xfs vhd1.img
+$ sudo mount -o loop vhd1.img /mnt/disk1
+```
+Rum above commands one by one until you completed the disk8
+* Install local perist Plugin for docker
+```
+$ sudo curl -fsSL https://raw.githubusercontent.com/CWSpear/local-persist/master/scripts/install.sh | sudo bash
+```
 
 ## 2. Run Distributed MinIO on Docker Compose
 
